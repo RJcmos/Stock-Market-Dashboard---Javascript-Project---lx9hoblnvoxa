@@ -1,1 +1,71 @@
 
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#input-container {
+    margin-bottom: 20px;
+}
+
+#symbol-input {
+    width: 200px;
+    padding: 10px;
+}
+
+#add-button {
+    padding: 10px 20px;
+}
+
+#timeframe-buttons {
+    margin-bottom: 20px;
+}
+
+.timeframe-button {
+    margin-right: 10px;
+    padding: 5px 10px;
+}
+
+#watchlist {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+.modal-content {
+    max-width: 400px;
+    margin: 100px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.modal-close {
+    text-align: right;
+}
+
+.modal-close button {
+    padding: 5px 10px;
+}
+
