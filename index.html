@@ -1,23 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Stock Market Dashboard</title>
-  <link rel="stylesheet" href="styles.css">
+    <title>Stock Market Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <div class="input-section">
-      <input type="text" id="stockSymbol" placeholder="Enter stock symbol">
-      <button class="timeframe-btn" data-timeframe="INTRADAY">INTRADAY</button>
-      <button class="timeframe-btn" data-timeframe="DAILY">DAILY</button>
-      <button class="timeframe-btn" data-timeframe="WEEKLY">WEEKLY</button>
-      <button class="timeframe-btn" data-timeframe="MONTHLY">MONTHLY</button>
-    </div>
-    <div class="watchlist" id="watchlist"></div>
-  </div>
+    <div class="container">
+        <h1>Stock Market Dashboard</h1>
 
-  <script src="app.js"></script>
+        <div id="input-container">
+            <input type="text" id="symbol-input" placeholder="Enter stock symbol">
+            <button id="add-button">Add</button>
+        </div>
+
+        <div id="timeframe-buttons">
+            <button class="timeframe-button" data-timeframe="INTRADAY">Intraday</button>
+            <button class="timeframe-button" data-timeframe="DAILY">Daily</button>
+            <button class="timeframe-button" data-timeframe="WEEKLY">Weekly</button>
+            <button class="timeframe-button" data-timeframe="MONTHLY">Monthly</button>
+        </div>
+
+        <div id="watchlist"></div>
+
+        <div id="modal"></div>
+    </div>
+
+    <script src="App.js"></script>
 </body>
 </html>
