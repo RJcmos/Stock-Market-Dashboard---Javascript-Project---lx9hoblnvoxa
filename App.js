@@ -1,4 +1,4 @@
-const apiKey = 'YOUR_ALPHAVANTAGE_API_KEY';
+const apiKey = '2ULLRZ37RYB2LP7M';
 const baseURL = 'https://www.alphavantage.co/query';
 
 const watchlist = document.getElementById('watchlist');
