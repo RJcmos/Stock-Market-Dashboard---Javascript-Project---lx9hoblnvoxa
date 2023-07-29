@@ -1,71 +1,80 @@
+body {
+  font-family: Arial, sans-serif;
+}
 
 .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-h1 {
-    text-align: center;
+.input-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
 }
 
-#input-container {
-    margin-bottom: 20px;
+.timeframe-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
 }
 
-#symbol-input {
-    width: 200px;
-    padding: 10px;
+.timeframe-btn:hover {
+  background-color: #0056b3;
 }
 
-#add-button {
-    padding: 10px 20px;
-}
-
-#timeframe-buttons {
-    margin-bottom: 20px;
-}
-
-.timeframe-button {
-    margin-right: 10px;
-    padding: 5px 10px;
-}
-
-#watchlist {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 10px;
+.watchlist {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
 }
 
 .card {
-    border: 1px solid #ccc;
-    padding: 10px;
-    cursor: pointer;
+  border: 1px solid #ccc;
+  padding: 10px;
+  cursor: pointer;
 }
 
-#modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: none;
+.card h3 {
+  margin: 0;
+}
+
+.card p {
+  margin-top: 5px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .modal-content {
-    max-width: 400px;
-    margin: 100px auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 400px;
+  text-align: center;
 }
 
-.modal-close {
-    text-align: right;
+.delete-btn {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
 }
 
-.modal-close button {
-    padding: 5px 10px;
+.delete-btn:hover {
+  background-color: #c82333;
 }
-
